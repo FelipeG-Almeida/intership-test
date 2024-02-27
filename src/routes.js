@@ -4,6 +4,9 @@ export default function setupRoutes(app) {
 	// Rota para iniciar o processo de scraping
 	app.get('/api/scrape', async (req, res) => {
 		try {
+			// Permissão de Cors
+			res.setHeader("Access-Control-Allow-Origin", "*")
+
 			const keyword = req.query.keyword;
 
 			// Verificando se o parâmetro de palavra-chave foi fornecido

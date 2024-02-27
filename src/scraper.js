@@ -1,6 +1,8 @@
-import { BASE_URL } from './constants';
+import axios from 'axios';
+import { load } from 'cheerio';
+import { BASE_URL } from '../constants.js';
 
-export default async function scrape() {
+export default async function scrape(keyword) {
 	// URL de busca da Amazon com a palavra-chave fornecida
 	const url = `${BASE_URL}${keyword}`;
 
