@@ -65,6 +65,13 @@ section {
 .product {
 	border: 1px solid #a1a3a7;
 	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s all;
+}
+
+.product:hover {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	transform: scale(1.025);
 }
 
 .image-container {
